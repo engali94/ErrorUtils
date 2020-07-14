@@ -1,0 +1,7 @@
+# ErrorUtils document generator jazzy settings
+
+copyright: Copyright 2020 ErrorUtils
+author: Ali A. Hilal
+xcodebuild_arguments: [-target, ErrorUtils-iOS]
+clean: true
+output: ./Documentation
