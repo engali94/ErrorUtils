@@ -23,6 +23,10 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* ErrorUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* ErrorUtils.framework */; };
 		3D9C433522746323000A6585 /* ErrorUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* ErrorUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4168CC0024BE58B300FD2E27 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168CBFF24BE58B300FD2E27 /* Throwable.swift */; };
+		4168CC0124BE58B300FD2E27 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168CBFF24BE58B300FD2E27 /* Throwable.swift */; };
+		4168CC0224BE58B300FD2E27 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168CBFF24BE58B300FD2E27 /* Throwable.swift */; };
+		4168CC0324BE58B300FD2E27 /* Throwable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168CBFF24BE58B300FD2E27 /* Throwable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,7 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4168CBFF24BE58B300FD2E27 /* Throwable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throwable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,10 +207,6 @@
 				3D9C42DB22745DB0000A6585 /* .gitignore */,
 				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
 				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
-				3DB91AC4229AC263002668DA,
-				3DB91AC5229AC26C002668DA,
-				3DB91AC6229AC272002668DA,
-				3DF6F6282315616D00706C4E,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -214,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C42A122745900000A6585 /* ErrorUtils.swift */,
+				4168CBFF24BE58B300FD2E27 /* Throwable.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -633,6 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4168CC0024BE58B300FD2E27 /* Throwable.swift in Sources */,
 				3D9C42A222745900000A6585 /* ErrorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4168CC0124BE58B300FD2E27 /* Throwable.swift in Sources */,
 				3D9C42B1227459C1000A6585 /* ErrorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4168CC0224BE58B300FD2E27 /* Throwable.swift in Sources */,
 				3D9C42BF227459F6000A6585 /* ErrorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4168CC0324BE58B300FD2E27 /* Throwable.swift in Sources */,
 				3D9C42CD22745A28000A6585 /* ErrorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,7 +883,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -907,7 +913,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -935,7 +941,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
@@ -965,7 +971,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
@@ -995,7 +1001,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-watchOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1025,7 +1031,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-watchOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1058,7 +1064,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -1089,7 +1095,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -1109,7 +1115,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1127,7 +1133,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-iOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1144,7 +1150,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -1163,7 +1169,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -1185,7 +1191,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-macOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -1205,7 +1211,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D.ErrorUtils-macOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -1225,7 +1231,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D-iOS.Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1246,7 +1252,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils[D[D-iOS.Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D-iOS.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
