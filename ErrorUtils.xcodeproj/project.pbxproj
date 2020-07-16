@@ -13,12 +13,6 @@
 		3D9C430C22746131000A6585 /* ThrowableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* ThrowableTests.swift */; };
 		3D9C431622746198000A6585 /* ErrorUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42C522745A07000A6585 /* ErrorUtils.framework */; };
 		3D9C431C227461AF000A6585 /* ThrowableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* ThrowableTests.swift */; };
-		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
-		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
-		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
-		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
-		3D9C433422746323000A6585 /* ErrorUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* ErrorUtils.framework */; };
-		3D9C433522746323000A6585 /* ErrorUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* ErrorUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		411D931224C061140053FB09 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D931024C060D70053FB09 /* LinkParser.swift */; };
 		411D931324C061140053FB09 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D931024C060D70053FB09 /* LinkParser.swift */; };
 		411D931424C061150053FB09 /* LinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D931024C060D70053FB09 /* LinkParser.swift */; };
@@ -78,28 +72,7 @@
 			remoteGlobalIDString = 3D9C42C422745A07000A6585;
 			remoteInfo = "ErrorUtils-macOS";
 		};
-		3D9C433622746323000A6585 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D9C428722745894000A6585 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D9C428F22745894000A6585;
-			remoteInfo = "ErrorUtils-iOS";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3D9C433822746323000A6585 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3D9C433522746323000A6585 /* ErrorUtils.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D9C429022745894000A6585 /* ErrorUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ErrorUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +93,6 @@
 		3D9C42F12274604A000A6585 /* ErrorUtils-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ErrorUtils-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43012274611B000A6585 /* ErrorUtils-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ErrorUtils-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C431122746198000A6585 /* ErrorUtils-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ErrorUtils-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9C43212274629B000A6585 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43232274629B000A6585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9C43252274629B000A6585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,14 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C431E2274629B000A6585 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C433422746323000A6585 /* ErrorUtils.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -223,7 +187,6 @@
 				3D9C42F12274604A000A6585 /* ErrorUtils-iOSTests.xctest */,
 				3D9C43012274611B000A6585 /* ErrorUtils-tvOSTests.xctest */,
 				3D9C431122746198000A6585 /* ErrorUtils-macOSTests.xctest */,
-				3D9C43212274629B000A6585 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,25 +425,6 @@
 			productReference = 3D9C431122746198000A6585 /* ErrorUtils-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3D9C43202274629B000A6585 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C43302274629C000A6585 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				3D9C431D2274629B000A6585 /* Sources */,
-				3D9C431E2274629B000A6585 /* Frameworks */,
-				3D9C431F2274629B000A6585 /* Resources */,
-				3D9C433822746323000A6585 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D9C433722746323000A6585 /* PBXTargetDependency */,
-			);
-			name = Example;
-			productName = Example;
-			productReference = 3D9C43212274629B000A6585 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -513,9 +457,6 @@
 					3D9C431022746198000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					3D9C43202274629B000A6585 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 				};
 			};
 			buildConfigurationList = 3D9C428A22745894000A6585 /* Build configuration list for PBXProject "ErrorUtils" */;
@@ -538,7 +479,6 @@
 				3D9C42F02274604A000A6585 /* ErrorUtils-iOSTests */,
 				3D9C43002274611B000A6585 /* ErrorUtils-tvOSTests */,
 				3D9C431022746198000A6585 /* ErrorUtils-macOSTests */,
-				3D9C43202274629B000A6585 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -590,15 +530,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D9C431F2274629B000A6585 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */,
-				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,15 +698,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D9C431D2274629B000A6585 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D9C43262274629B000A6585 /* ViewController.swift in Sources */,
-				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -793,11 +715,6 @@
 			isa = PBXTargetDependency;
 			target = 3D9C42C422745A07000A6585 /* ErrorUtils-macOS */;
 			targetProxy = 3D9C431722746198000A6585 /* PBXContainerItemProxy */;
-		};
-		3D9C433722746323000A6585 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3D9C428F22745894000A6585 /* ErrorUtils-iOS */;
-			targetProxy = 3D9C433622746323000A6585 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -959,6 +876,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -989,6 +907,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-iOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1017,6 +936,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1047,6 +967,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-tvOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1077,6 +998,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-watchOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1107,6 +1029,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-watchOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1140,6 +1063,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1171,6 +1095,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D.ErrorUtils-macOS";
 				PRODUCT_NAME = ErrorUtils;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1294,48 +1219,6 @@
 			};
 			name = Release;
 		};
-		3D9C43312274629C000A6585 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D-iOS.Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3D9C43322274629C000A6585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.errorutils\U001b[D\U001b[D-iOS.Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1407,15 +1290,6 @@
 			buildConfigurations = (
 				3D9C431A22746198000A6585 /* Debug */,
 				3D9C431B22746198000A6585 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3D9C43302274629C000A6585 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D9C43312274629C000A6585 /* Debug */,
-				3D9C43322274629C000A6585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
