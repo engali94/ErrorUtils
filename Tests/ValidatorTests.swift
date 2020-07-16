@@ -46,4 +46,10 @@ extension Validator where Value == String {
             )
         }
     }
+    
+    static var username: Validator {
+        return Validator { string in
+            try validate(string.count >= 3, errorMessage: "Username must have at least 3 characters")
+        }
+    }
 }

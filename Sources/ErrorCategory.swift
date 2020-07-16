@@ -9,7 +9,7 @@
 @_exported import Foundation
 
 public enum ErrorCategory {
-    case notRetrybale
+    case notRetryable
     case retryable
     case requiresLogin
 }
@@ -22,7 +22,7 @@ public extension Error {
     
     func resolveCategory() -> ErrorCategory {
         guard let categorized = self as? CategorizedError else {
-            return .notRetrybale
+            return .notRetryable
         }
         return categorized.category
     }

@@ -15,7 +15,7 @@ class ErrorCategoryTests: XCTestCase {
         let notRetrybale = ErrorStub.decodingFailure.resolveCategory()
         let retryable =  ErrorStub.noInternetConnection.resolveCategory()
         let requiresLogin = ErrorStub.notAuthorized.resolveCategory()
-        XCTAssertEqual(notRetrybale, .notRetrybale)
+        XCTAssertEqual(notRetrybale, .notRetryable)
         XCTAssertEqual(retryable, .retryable)
         XCTAssertEqual(requiresLogin, .requiresLogin)
     }
@@ -39,7 +39,7 @@ extension ErrorCategoryTests.ErrorStub: CategorizedError {
         case .noInternetConnection:
             return .retryable
         case .decodingFailure:
-            return .notRetrybale
+            return .notRetryable
         case .notAuthorized:
             return .requiresLogin
         }
