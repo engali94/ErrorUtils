@@ -8,16 +8,22 @@
 
 @_exported import Foundation
 
-protocol Throwable {
+public protocol Throwable {
     
-    func excute<T>(_ task: @autoclosure () throws -> T, orThrow errorExpression: @autoclosure () -> Error) throws -> T
+    func execute<T>(_ task: @autoclosure () throws -> T,
+                    orThrow errorExpression: @autoclosure () -> Error) throws -> T
     
-    func excute<T>(_ task: @autoclosure () throws -> T, errorTransform: (Error) -> Error) throws -> T
+    func execute<T>(_ task: @autoclosure () throws -> T,
+                    errorTransform: (Error) -> Error) throws -> T
+    
+    @discardableResult
+    func execute<T>(_ task: @autoclosure () throws -> T, orCaptureError: (@escaping(Error) -> Void)) -> T?
 }
 
-extension Throwable {
+public extension Throwable {
     
-    func excute<T>(_ task: @autoclosure () throws -> T, orThrow errorExpression: @autoclosure () -> Error) throws -> T {
+    func execute<T>(_ task: @autoclosure () throws -> T,
+                    orThrow errorExpression: @autoclosure () -> Error) throws -> T {
         do {
             return try task()
          } catch {
@@ -25,12 +31,23 @@ extension Throwable {
          }
     }
     
-    func excute<T>(_ task: @autoclosure () throws -> T, errorTransform: (Error) -> Error) throws -> T {
+    func execute<T>(_ task: @autoclosure () throws -> T,
+                    errorTransform: (Error) -> Error) throws -> T {
         do {
             return try task()
         } catch {
             throw errorTransform(error)
         }
+    }
+    
+    func execute<T>(_ task: @autoclosure () throws -> T,
+                    orCaptureError: (@escaping(Error) -> Void)) -> T? {
+        do {
+            return try task()
+        } catch {
+             orCaptureError(error)
+        }
+        return nil
     }
     
 }
