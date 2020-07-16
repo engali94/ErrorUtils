@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "ErrorUtils"
-  s.version                   = "1.0.0"
+  s.version                   = "1.0.1"
   s.summary                   = "ErrorUtils"
   s.homepage                  = "https://github.com/AliA.Hilal/ErrorUtils"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
