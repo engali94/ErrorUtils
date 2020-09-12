@@ -12,13 +12,13 @@ import ErrorUtils
 class ValidatorTests: XCTestCase {
     
     func testLengthRequirement() throws {
-        XCTAssertThrowsError(try validate("123", using: .password))
-        try validate("123BFg4567", using: .password)
+        XCTAssertThrowsError(try Validator<String>.validate("123", using: .password))
+        try Validator<String>.validate("123BFg4567", using: .password)
     }
     
     func testUppercasedCharacterRequirement() throws {
-        XCTAssertThrowsError(try validate("abcdefg", using: .password))
-        try validate("Abcdefg", using: .password)
+        XCTAssertThrowsError(try Validator<String>.validate("abcdefg", using: .password))
+        try Validator<String>.validate("Abcdefg", using: .password)
     }
     
     static var allTests = [

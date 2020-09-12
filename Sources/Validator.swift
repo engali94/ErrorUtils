@@ -15,6 +15,18 @@ public struct Validator<Value> {
     public init(closure: (@escaping(Value) throws -> Void)) {
         self.closure = closure
     }
+    
+    public static func validate(_ condition: @autoclosure () -> Bool,
+                         errorMessage messageExpression: @autoclosure () -> String) throws {
+        guard condition() else {
+            let message = messageExpression()
+            throw ValidationError(message: message)
+        }
+    }
+
+    public static func validate<T>(_ value: T, using validator: Validator<T>) throws {
+        try validator.closure(value)
+    }
   
 }
 
@@ -23,14 +35,4 @@ public struct ValidationError: LocalizedError {
     public var errorDescription: String? { return message }
 }
 
-public func validate(_ condition: @autoclosure () -> Bool,
-                     errorMessage messageExpression: @autoclosure () -> String) throws {
-    guard condition() else {
-        let message = messageExpression()
-        throw ValidationError(message: message)
-    }
-}
 
-public func validate<T>(_ value: T, using validator: Validator<T>) throws {
-    try validator.closure(value)
-}
