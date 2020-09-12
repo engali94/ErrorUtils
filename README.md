@@ -94,15 +94,15 @@ func parse(url: String) throws -> String {
 `execute` method has three overloads:
 
 ``` swift
-execute( _: ,orThrow)
+execute( _: ,orThrow:)
 ```
 
 ```swift
-execute( _: ,errorTransform)
+execute( _: ,errorTransform:)
 ```
 
 ```swift
-execute( _: ,orCaptureError)
+execute( _: ,orCaptureError:)
 ```
 
 ## 2. Input Validator
